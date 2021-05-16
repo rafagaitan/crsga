@@ -149,7 +149,7 @@ The applications try to automatic detect the power lines using Genetic and Simul
 
 ## Build
 
-For building it uses [**CMake**](https://cmake.org/) and optionally [**Conan**](https://conan.io/) if you want to build the applications.
+For building, it uses [**CMake**](https://cmake.org/) and optionally [**Conan**](https://conan.io/) if you want to build the applications.
 
 ```bash
 mkdir build
