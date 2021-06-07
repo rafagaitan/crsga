@@ -1,16 +1,16 @@
-# crsGA: Simple C++ Genetic Algorithm library
+# crsGA: C++ Genetic Algorithm library
 
-crsGA is a simple C++ template library for developing genetic algorithms, plus some other utilities (Logger and Threading).
+crsGA is a C++ template library for developing genetic algorithms, plus some other utilities (Logger and Threading).
 
 ---
 
 **NOTE**
 
-The library was designed to be easy to use, it might not be well suited for high performance, it will always depend on how you define your data structures.
+The library was designed to be easy to use, but knowledge of Genetica Algorithm concepts is required. It might not be well suited for high performance and it will always depend on how you define your data structures.
 
 ---
 
-The library allows to easily implement each of the concepts of a Genetic Algorithm. The following example shows how to implement the **OneMax** genetic algorithm.
+The library allows to implement each of the concepts of a Genetic Algorithm. The following example shows how to implement the **OneMax** genetic algorithm.
 
 First we define what is a `Gen`:
 
@@ -116,7 +116,7 @@ Finally we need to define the `GeneticAlgorithm` that will put all together:
 using OneMaxGA = crsGA::GeneticAlgorithm<Gen, Chromosome, Population>;
 ```
 
-Running the genetic algorithm just needs a few more steps:
+For running the genetic algorithm needs a few more steps:
 
 ```cpp
 int main(int, char **)
@@ -137,11 +137,11 @@ int main(int, char **)
 }
 ```
 
-This was a very simple example, but the API allows also to define the `CrossoverPolicy`, the `SelectionPolicy` and the `ReplacementPolicy`, although a default implementation has been provided. See `GeneticAlgorithm.hpp` and `Common.hpp` headers for more details.
+This was an example using most of the default functionality. The API allows also to define the `CrossoverPolicy`, the `SelectionPolicy` and the `ReplacementPolicy`, although a default implementation has been provided. See `GeneticAlgorithm.hpp` and `Common.hpp` headers for more details.
 
 ## Applications
 
-The code also provides a couple of more advanced applications, which allows also allows to render the progress and results in 3D using [OpenSceneGraph](https://github.com/openscenegraph/OpenSceneGraph).
+The code also provides a couple of more advanced applications, which allows to visualize the genetic algorithm progress and results in 3D using [OpenSceneGraph](https://github.com/openscenegraph/OpenSceneGraph).
 
 The applications try to automatic detect the power lines using Genetic and Simulated Annealing algorithms on point cloud data:
 
