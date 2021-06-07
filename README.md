@@ -10,7 +10,7 @@ The library was designed to be easy to use, but knowledge of Genetic Algorithm c
 
 ---
 
-The library allows to implement each of the concepts of a Genetic Algorithm. The following example shows how to implement the **OneMax** genetic algorithm.
+The library allows to implement each of the concepts of a Genetic Algorithm, for instance the following example shows how to implement the **OneMax** genetic algorithm.
 
 First we define what is a `Gen`:
 
