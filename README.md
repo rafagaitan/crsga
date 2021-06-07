@@ -6,7 +6,7 @@ crsGA is a C++ template library for developing genetic algorithms, plus some oth
 
 **NOTE**
 
-The library was designed to be easy to use, but knowledge of Genetica Algorithm concepts is required. It might not be well suited for high performance and it will always depend on how you define your data structures.
+The library was designed to be easy to use, but knowledge of Genetic Algorithm concepts is required. It might not be well suited for high performance and it will always depend on how you define your data structures.
 
 ---
 
